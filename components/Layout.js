@@ -1,10 +1,14 @@
 import Head from 'next/head';
-import styles from '../styles/Layout.module.css';
+import { useRouter } from 'next/router'
+import styles from '@/styles/Layout.module.css';
 import Header from './Header';
 import Footer from './Footer';
-import { Container } from 'react-bootstrap';
+import Showcase from './Showcase';
+
 
 export default function Layout({ title, keywords, description, children }) {
+  const router = useRouter()
+
   return (
     <div>
       <Head>
@@ -15,9 +19,13 @@ export default function Layout({ title, keywords, description, children }) {
         <meta name='keywords' content={keywords} />
         <title>{title}</title>       
       </Head>
+    
       <Header />
-      <Container>{children}</Container>
+      {/* {router.pathname === '/' && <Showcase />} */}
+      <div>{children}</div>
       <Footer />
+     
+    
     </div>
   );
 }
