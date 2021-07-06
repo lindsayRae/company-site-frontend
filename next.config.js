@@ -1,11 +1,10 @@
-// const withCSS = require('@zeit/next-css');
+// dont know what this does
+// module.exports = {
+//   reactStrictMode: true,
+// };
 
 module.exports = {
-  reactStrictMode: true,
+  images: {
+    domains: ['res.cloudinary.com'],
+  },
 };
-
-// module.exports = withCSS({
-//   cssLoaderOptions: {
-//     url: false,
-//   },
-// });
