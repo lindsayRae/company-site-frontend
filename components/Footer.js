@@ -5,9 +5,6 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <p>Copyright &copy; Lindsay's Co 2021</p>
-      <p>
-        <Link href='/blog'>Blog</Link>
-      </p>
     </footer>
   );
 }
