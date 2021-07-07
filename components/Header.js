@@ -17,26 +17,27 @@ import {
 export default function Header() {
   return (
     <header>
-    
-        <Navbar bg="light" variant="light" expand="lg" fixed="top" >
+      <Navbar bg='light' expand='lg' fixed='top'>
         <Container>
-          <Navbar.Brand href="/">Lindsay's Co</Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-            <Nav className="mr-5">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="/portfolio">Portfolio</Nav.Link>
-              <Nav.Link href="/blog">Blog</Nav.Link> 
+          <Navbar.Brand href='/'>Lindsay's Co</Navbar.Brand>
+          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Collapse
+            id='basic-navbar-nav'
+            className='justify-content-end'
+          >
+            <Nav className='mr-5'>
+              <Nav.Link href='/'>Home</Nav.Link>
+              <Nav.Link href='/portfolio'>Portfolio</Nav.Link>
+              <Nav.Link href='/blog'>Blog</Nav.Link>
             </Nav>
-            <Nav className="">         
-              <Nav.Link href="#link">Log In</Nav.Link>
-              <Button variant="outline-success">Contact Us</Button>         
-            </Nav>   
+            <Nav className=''>
+              <Nav.Link href='#link'>Log In</Nav.Link>
+              <Nav.Link href='#link'>Contact</Nav.Link>
+              {/* <Button variant="outline-success">Contact Us</Button>          */}
+            </Nav>
           </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      
-     
+        </Container>
+      </Navbar>
     </header>
   );
 }
