@@ -27,7 +27,9 @@ export default function Header() {
           >
             <Nav className='mr-5'>
               <Nav.Link href='/'>Home</Nav.Link>
+              <Nav.Link href='/services'>Services</Nav.Link>
               <Nav.Link href='/portfolio'>Portfolio</Nav.Link>
+              <Nav.Link href='/faq'>FAQ</Nav.Link>
               <Nav.Link href='/blog'>Blog</Nav.Link>
             </Nav>
             <Nav className=''>
