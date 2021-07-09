@@ -69,8 +69,8 @@ body {
   --white: #ffffff;
   --gray: #f8f9fe;
   --black: #121619;
-  --paragraph-color: #6084a4;
-  --pink: #f54ea2;
+  --paragraph-color: #121619;
+  --pink: #06aed5;
   --gold: #eac785;
   --font-size: 15px;
   --transition: 0.5s;
@@ -121,6 +121,18 @@ p {
 
 p:last-child {
   margin-bottom: 0;
+}
+
+.process-list {
+  color: var(--paragraph-color);
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+  list-style: none;
+  padding-left: 0;
+}
+
+.process-list > li {
+  padding-top: 7px;
 }
 
 .h1,
@@ -2851,6 +2863,17 @@ Feedback CSS
   padding-left: 150px;
   max-width: 920px;
   margin-bottom: 40px;
+  text-align: center;
+}
+
+.testimonal-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/images/Quote.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
 }
 
 .single-feedback img {
@@ -2868,7 +2891,7 @@ Feedback CSS
   font-style: italic;
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: 20px;
 }
 
@@ -2876,12 +2899,12 @@ Feedback CSS
   display: inline-block;
   margin: 0;
   font-size: 20px;
-  color: var(--white);
+  color: var(--black);
 }
 
 .single-feedback span {
   display: inline-block;
-  color: var(--white);
+  color: var(--black);
   margin-left: 4px;
   font-size: 15px;
   font-weight: 400;
@@ -2911,7 +2934,7 @@ Feedback CSS
 }
 
 /*================================================
-How We Works CSS
+How We Works CSS ** Our Process
 =================================================*/
 .how-we-work {
   position: relative;
@@ -2928,6 +2951,7 @@ How We Works CSS
   -webkit-transition: var(--transition);
   transition: var(--transition);
   z-index: 1;
+  height: 387px;
 }
 
 .single-work-box h3 {
@@ -2958,7 +2982,7 @@ How We Works CSS
   transition: var(--transition);
 }
 
-.single-work-box i {
+.process-icons {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -2968,6 +2992,7 @@ How We Works CSS
   -webkit-transition: var(--transition);
   transition: var(--transition);
   opacity: 0.5;
+  margin-bottom: 8px;
 }
 
 .single-work-box:hover {
@@ -3000,7 +3025,7 @@ Team CSS
   overflow: hidden;
 }
 
-.team-area.bg-image {
+.how-we-work.bg-image {
   background-image: url(/images/bg-shape.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -5736,7 +5761,7 @@ Footer CSS
   margin-bottom: 0;
 }
 
-.single-footer-widget ul.footer-contact-info li i {
+.single-footer-widget ul.footer-contact-info li svg {
   position: absolute;
   color: var(--green);
   left: 0;
