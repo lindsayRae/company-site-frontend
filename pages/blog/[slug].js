@@ -3,9 +3,9 @@ import { API_URL } from '@/config/index';
 import Image from 'next/image';
 import { Container, Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
-
+import ReactMarkdown from 'react-markdown';
+// https://betterprogramming.pub/build-your-personal-blog-with-next-js-and-strapi-e092bf11d3db
 export default function SingleBlogPage({ b }) {
-  console.log('singBlog', b);
   return (
     <Layout>
       <div className='page-title-area item-bg1'>
@@ -52,7 +52,7 @@ export default function SingleBlogPage({ b }) {
                     </li>
                   </ul>
                   <h3>{b.title}</h3>
-                  <p>{b.description}</p>
+                  <ReactMarkdown>{b.description}</ReactMarkdown>
                 </div>
               </div>
             </Col>
@@ -66,7 +66,6 @@ export default function SingleBlogPage({ b }) {
 export async function getStaticPaths() {
   const res = await fetch(`${API_URL}/blogs`);
   const blogs = await res.json();
-  console.log('getStaticPaths: ', blogs);
 
   const paths = blogs.map((b) => ({
     params: { slug: b.slug },
@@ -81,7 +80,7 @@ export async function getStaticPaths() {
 export async function getStaticProps({ params: { slug } }) {
   const res = await fetch(`${API_URL}/blogs/?slug=${slug}`);
   const blogs = await res.json();
-  console.log('getStaticProps: ', blogs);
+
   return {
     props: {
       b: blogs[0],

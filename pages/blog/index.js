@@ -47,7 +47,6 @@ export default function BlogPage({ blogs, page, total }) {
 
 //? runs server side
 export async function getServerSideProps({ query: { page = 1 } }) {
-  console.log('Is this running?');
   //? run at build time will run static pages
   //export async function getStaticProps() {
 

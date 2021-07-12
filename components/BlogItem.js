@@ -9,20 +9,6 @@ export default function BlogItem({ b }) {
   console.log(b);
   return (
     <>
-      {/* <Image
-        src={b.image ? b.image.formats.thumbnail.url : '/images/blank.jpg'}
-        width={170}
-        height={100}
-      />
-
-      <h3>{b.title}</h3>
-
-      <div>
-        <Link href={`/blog/${b.slug}`}>
-          <a>Details</a>
-        </Link>
-      </div> */}
-
       <Col lg='4' md='6'>
         <div className='single-blog-post'>
           <div className='blog-image'>
