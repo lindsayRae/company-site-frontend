@@ -1,0 +1,9 @@
+.pagBtn {
+  padding: 8px 16px;
+  line-height: unset;
+  color: #121619;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  border: 1px solid #eeeeee;
+}
