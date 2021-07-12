@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
 
+import { Col, Button } from 'react-bootstrap';
+
 export default function SearchBlog() {
   const [term, setTerm] = useState('');
   const router = useRouter();
@@ -11,15 +13,21 @@ export default function SearchBlog() {
     setTerm('');
   };
   return (
-    <div>
+    <Col lg='6' className='align-center'>
       <form onSubmit={handleSubmit}>
-        <input
-          type='text'
-          value={term}
-          onChange={(e) => setTerm(e.target.value)}
-          placeholder='Search Blogs'
-        />
+        <div className='form-group d-flex'>
+          <input
+            className='form-control'
+            type='text'
+            value={term}
+            onChange={(e) => setTerm(e.target.value)}
+            placeholder='Search Blogs'
+          />
+          <Button className='ml-2' style={{ height: '45px' }}>
+            Search
+          </Button>
+        </div>
       </form>
-    </div>
+    </Col>
   );
 }
