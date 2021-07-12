@@ -93,7 +93,7 @@ export default function HomePage() {
         <Container fluid>
           <Row>
             <Col lg='6' md='6' className='p-0'>
-              <div className='cta-about-image'>
+              <div className=''>
                 {/* Photo by <a href="https://unsplash.com/@kobuagency?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">KOBU Agency</a> on <a href="https://unsplash.com/s/photos/team?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
 
                 <Image

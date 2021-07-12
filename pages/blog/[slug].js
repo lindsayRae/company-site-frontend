@@ -1,22 +1,64 @@
 import Layout from '@/components/Layout';
 import { API_URL } from '@/config/index';
 import Image from 'next/image';
+import { Container, Row, Col } from 'react-bootstrap';
+import Link from 'next/link';
 
 export default function SingleBlogPage({ b }) {
-  console.log(b);
+  console.log('singBlog', b);
   return (
     <Layout>
-      <h1 style={{ marginTop: '50px' }}>{b.title}</h1>
-      {b.image && (
-        <>
-          <div>
-            <Image src={b.image.formats.medium.url} width={960} height={600} />
-          </div>
-          <div>
-            <p>{b.description}</p>
-          </div>
-        </>
-      )}
+      <div className='page-title-area item-bg1'>
+        <Container>
+          <h1>Blog Details</h1>
+          <ul>
+            <li>
+              <Link href='/'>
+                <a>Home</a>
+              </Link>
+            </li>
+            <li>
+              <Link href='/blog'>
+                <a>Blogs</a>
+              </Link>
+            </li>
+            <li>
+              <Link href='/blog'>
+                <a>Blog Details</a>
+              </Link>
+            </li>
+          </ul>
+        </Container>
+      </div>
+      <section className='blog-details-area ptb-120'>
+        <Container>
+          <Row>
+            <Col>
+              <div className='blog-details'>
+                <div className='article-img'>
+                  <Image
+                    src={
+                      b.image ? b.image.formats.large.url : '/images/blank.jpg'
+                    }
+                    width={1110}
+                    height={700}
+                  />
+                  <div className='date'>{b.date}</div>
+                </div>
+                <div className='article-content'>
+                  <ul className='category'>
+                    <li>
+                      <a>{b.tag}</a>
+                    </li>
+                  </ul>
+                  <h3>{b.title}</h3>
+                  <p>{b.description}</p>
+                </div>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
     </Layout>
   );
 }
