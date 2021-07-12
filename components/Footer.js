@@ -120,11 +120,15 @@ export default function Footer() {
           </Row>
         </div>
       </Container>
+      <img src='/images/line-bg.png' className='line-bg' />
       <div className='shape23'>
         <Image src='/images/shapes/23.png' width={215} height={192} />
       </div>
-      <div className='shape24'>
-        <Image src='/images/shapes/24.png' width={215} height={192} />
+      {/* <div className='shape24'>
+        <img src='/images/shapes/24.png' />
+      </div> */}
+      <div className='shape27'>
+        <Image src='/images/shapes/27.png' width={116} height={116} />
       </div>
     </footer>
   );
