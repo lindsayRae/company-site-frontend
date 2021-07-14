@@ -35,7 +35,7 @@ export default function FAQPage() {
           </Row>
           <Row className='h-100 align-items-center'>
             <Col lg='12'>
-              <div className='team-details-info'>
+              <div className='faq-info'>
                 <h3>This is question number one.</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -49,7 +49,7 @@ export default function FAQPage() {
               </div>
             </Col>
             <Col lg='12' className='pt-5'>
-              <div className='team-details-info'>
+              <div className='faq-info'>
                 <h3>This is question number two.</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -63,7 +63,7 @@ export default function FAQPage() {
               </div>
             </Col>
             <Col lg='12' className='pt-5'>
-              <div className='team-details-info'>
+              <div className='faq-info'>
                 <h3>This is question number three.</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -77,7 +77,7 @@ export default function FAQPage() {
               </div>
             </Col>
             <Col lg='12' className='pt-5'>
-              <div className='team-details-info'>
+              <div className='faq-info'>
                 <h3>This is question number four.</h3>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
@@ -93,61 +93,6 @@ export default function FAQPage() {
           </Row>
         </Container>
       </section>
-
-      {/* <section className='faq-area ptb-120'>
-        <Container>
-          <div className='section-title'>
-            <span>Frequently Asked Questions</span>
-            <h2>You Asked, We answered</h2>
-            <div className='faq-accordion'>
-              <h3>This is question number one.</h3>
-            </div>
-
-            <div className='faq-accordion'>
-            <Accordion defaultActiveKey='0'>
-              <Card>
-                <Accordion.Toggle
-                  as={Card.Header}
-                  eventKey='0'
-                  className={styles.expand}
-                >
-                  <FaAngleDown size={28} className='mr-2' />
-                  This is a question...
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey='0'>
-                  <Card.Body>Hello! Here is the answer</Card.Body>
-                </Accordion.Collapse>
-              </Card>
-              <Card>
-                <Accordion.Toggle
-                  as={Card.Header}
-                  eventKey='1'
-                  className={styles.expand}
-                >
-                  <FaAngleDown size={28} className='mr-2' />
-                  This is a question...
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey='1'>
-                  <Card.Body>Hello! I'm another body</Card.Body>
-                </Accordion.Collapse>
-              </Card>
-              <Card>
-                <Accordion.Toggle
-                  as={Card.Header}
-                  eventKey='2'
-                  className={styles.expand}
-                >
-                  <FaAngleDown size={28} className='mr-2' />
-                  This is a question...
-                </Accordion.Toggle>
-                <Accordion.Collapse eventKey='2'>
-                  <Card.Body>Hello! I'm another body</Card.Body>
-                </Accordion.Collapse>
-              </Card>
-            </Accordion>
-          </div>
-        </Container>
-      </section> */}
     </Layout>
   );
 }

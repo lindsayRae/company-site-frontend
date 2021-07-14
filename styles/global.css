@@ -95,7 +95,7 @@ a {
 
 a:hover,
 a:focus {
-  color: var(--green) !important;
+  color: var(--green);
   text-decoration: none;
 }
 
@@ -2324,7 +2324,7 @@ Why Choose Us CSS
 
 .why-choose-us-img {
   margin-bottom: 35px;
-  position: relative;
+  /* position: relative; */
 }
 
 .why-choose-us-img .front-img {
@@ -5149,117 +5149,6 @@ Portfolio Details CSS
 }
 
 /*================================================
-Team Details CSS
-=================================================*/
-.team-details-info h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-.team-details-info p {
-  margin: 0;
-}
-
-.team-details-info .personal-information {
-  margin-top: 20px;
-}
-
-.team-details-info .personal-information h3 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.team-details-info .personal-information ul {
-  margin: 20px 0 0;
-  padding: 0;
-  list-style-type: none;
-}
-
-.team-details-info .personal-information ul li {
-  margin-bottom: 8px;
-  font-size: 15px;
-  color: var(--paragraph-color);
-}
-
-.team-details-info .personal-information ul li span a {
-  color: var(--paragraph-color);
-}
-
-.team-details-info .personal-information ul li span a:hover {
-  color: var(--green);
-}
-
-.team-details-info .personal-information ul li:last-child {
-  margin-bottom: 0;
-}
-
-.overview-desc {
-  margin-top: 30px;
-}
-
-.overview-desc h3 {
-  font-size: 22px;
-  margin-bottom: 15px;
-}
-
-.overview-desc .skills {
-  position: relative;
-}
-
-.overview-desc .skills .skill-item {
-  position: relative;
-  margin-bottom: 25px;
-}
-
-.overview-desc .skills .skill-item .skill-header {
-  position: relative;
-  margin-bottom: 10px;
-}
-
-.overview-desc .skills .skill-item .skill-header .skill-title {
-  font-size: 17px;
-  margin-bottom: 0;
-}
-
-.overview-desc .skills .skill-item .skill-header .skill-percentage {
-  position: absolute;
-  right: 0;
-  top: 4px;
-  font-size: 16px;
-  font-weight: 300;
-  font-family: 'Rubik', sans-serif;
-  color: var(--paragraph-color);
-}
-
-.overview-desc .skills .skill-item:last-child {
-  margin-bottom: 0;
-}
-
-.overview-desc .skills .skill-item .skill-bar {
-  position: relative;
-  width: 100%;
-}
-
-.overview-desc .skills .skill-item .skill-bar .bar-inner {
-  position: relative;
-  width: 100%;
-  border-bottom: 7px solid #d5d5d5;
-  border-radius: 30px;
-}
-
-.overview-desc .skills .skill-item .skill-bar .bar-inner .bar {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 0px;
-  height: 7px;
-  background: var(--green);
-  -webkit-transition: all 2000ms ease;
-  transition: all 2000ms ease;
-  border-radius: 30px;
-}
-
-/*================================================
 Login CSS
 =================================================*/
 .login-form {
@@ -5357,77 +5246,15 @@ Signup CSS
 /*================================================
 FAQ CSS
 =================================================*/
-.faq-accordion {
-  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-  padding: 60px;
-  background: var(--white);
-  border-radius: 10px;
-}
 
-.faq-accordion .accordion {
-  border: none;
-}
-
-.faq-accordion .accordion .accordion__item {
-  display: block;
+.faq-info h3 {
+  font-size: 22px;
   margin-bottom: 15px;
+  font-weight: 600;
 }
 
-.faq-accordion .accordion .accordion__item:last-child {
-  margin-bottom: 0;
-}
-
-.faq-accordion .accordion .accordion__item .accordion__button {
-  display: block;
-  padding: 20px 30px;
-  text-decoration: none;
-  background: #f5f9ff;
-  cursor: pointer;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-  outline: 0;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-.faq-accordion .accordion .accordion__item .accordion__button:hover,
-.faq-accordion .accordion .accordion__item .accordion__button.active,
-.faq-accordion .accordion .accordion__item .accordion__button:focus {
-  background: var(--green);
-  color: var(--white);
-}
-
-.faq-accordion .accordion .accordion__item .accordion__button.active {
-  border-radius: 0;
-}
-
-.faq-accordion .accordion .accordion__item .accordion-content {
-  position: relative;
-  overflow: hidden;
-  padding: 0;
-  line-height: 1.9;
-}
-
-.faq-accordion .accordion .accordion__item + .accordion__item {
-  border: none;
-}
-
-.faq-contact {
-  margin-top: 45px;
-  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-  padding: 60px;
-  border-radius: 4px;
-}
-
-.faq-contact h3 {
-  font-size: 25px;
-  margin-bottom: 25px;
-}
-
-.faq-contact form .btn {
-  margin-top: 15px;
+.faq-info p {
+  margin: 0;
 }
 
 /*================================================
@@ -5612,7 +5439,7 @@ Footer CSS
   background: #08071c;
 }
 
-.footer-area .line-bg {
+.line-bg {
   position: absolute;
   top: -120px;
   right: -100px;
@@ -5804,7 +5631,7 @@ Go Top CSS
   width: 50px;
   text-align: center;
   height: 50px;
-  line-height: 50px;
+  line-height: 43px;
   border-radius: 50%;
   -webkit-transition: var(--transition);
   transition: var(--transition);
