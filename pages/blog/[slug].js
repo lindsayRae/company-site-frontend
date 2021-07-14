@@ -6,6 +6,11 @@ import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 // https://betterprogramming.pub/build-your-personal-blog-with-next-js-and-strapi-e092bf11d3db
 export default function SingleBlogPage({ b }) {
+  const formateDate = (date) => {
+    let dateArr = date.split('-');
+    let formattedDate = `${dateArr[1]}-${dateArr[2]}-${dateArr[0]}`;
+    return formattedDate;
+  };
   return (
     <Layout>
       <div className='page-title-area item-bg1'>
@@ -39,7 +44,7 @@ export default function SingleBlogPage({ b }) {
                     width={1110}
                     height={700}
                   />
-                  <div className='date'>{b.date}</div>
+                  <div className='date'>{formateDate(b.date)}</div>
                 </div>
                 <div className='article-content'>
                   <ul className='category'>

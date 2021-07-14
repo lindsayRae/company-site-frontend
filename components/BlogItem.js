@@ -6,7 +6,12 @@ import { Col } from 'react-bootstrap';
 import { FaAngleDoubleRight } from 'react-icons/fa';
 
 export default function BlogItem({ b }) {
-  console.log(b);
+  const formateDate = (date) => {
+    let dateArr = date.split('-');
+    let formattedDate = `${dateArr[1]}-${dateArr[2]}-${dateArr[0]}`;
+    return formattedDate;
+  };
+
   return (
     <>
       <Col lg='4' md='6'>
@@ -28,7 +33,7 @@ export default function BlogItem({ b }) {
             </div>
           </div>
           <div className='blog-post-content'>
-            <span className='date'>{b.date}</span>
+            <span className='date'>{formateDate(b.date)}</span>
             <h3>
               <a>{b.title}</a>
             </h3>
