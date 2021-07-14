@@ -39,9 +39,3 @@
   margin-top: 25px;
   font-size: 18px;
 }
-
-.expand {
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-}
