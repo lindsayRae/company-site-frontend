@@ -19,11 +19,7 @@ export default function PortfolioPage({ portfolios, page, total }) {
                 <a>Home</a>
               </Link>
             </li>
-            <li>
-              <Link href='/blog'>
-                <a>Portfolio</a>
-              </Link>
-            </li>
+            <li>Portfolio</li>
           </ul>
         </Container>
       </div>

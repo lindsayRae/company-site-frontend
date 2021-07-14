@@ -19,11 +19,7 @@ export default function BlogPage({ blogs, page, total }) {
                 <a>Home</a>
               </Link>
             </li>
-            <li>
-              <Link href='/blog'>
-                <a>Blogs</a>
-              </Link>
-            </li>
+            <li>Blogs</li>
           </ul>
         </Container>
       </div>

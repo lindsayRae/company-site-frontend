@@ -25,11 +25,7 @@ export default function SinglePortfolioPage({ p }) {
                 <a>Portfolio</a>
               </Link>
             </li>
-            <li>
-              <Link href='/blog'>
-                <a>Portfolio Details</a>
-              </Link>
-            </li>
+            <li>{p.title}</li>
           </ul>
         </Container>
       </div>
@@ -86,7 +82,7 @@ export default function SinglePortfolioPage({ p }) {
             </Col>
             <Col lg='12' md='8'>
               <div className='portfolio-details-content'>
-                <h3>Shirley Sei Bella</h3>
+                <h3>{p.title}</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Atque eum alias debitis suscipit, sint dignissimos minus

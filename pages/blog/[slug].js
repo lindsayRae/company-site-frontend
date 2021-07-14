@@ -22,11 +22,7 @@ export default function SingleBlogPage({ b }) {
                 <a>Blogs</a>
               </Link>
             </li>
-            <li>
-              <Link href='/blog'>
-                <a>Blog Details</a>
-              </Link>
-            </li>
+            <li>{b.title}</li>
           </ul>
         </Container>
       </div>
