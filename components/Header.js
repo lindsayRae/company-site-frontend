@@ -33,8 +33,8 @@ export default function Header() {
               <Nav.Link href='/blog'>Blog</Nav.Link>
             </Nav>
             <Nav className=''>
-              <Nav.Link href='#link'>Log In</Nav.Link>
-              <Nav.Link href='#link'>Contact</Nav.Link>
+              {/* <Nav.Link href='#link'>Log In</Nav.Link> */}
+              <Nav.Link href='/contact'>Contact</Nav.Link>
               {/* <Button variant="outline-success">Contact Us</Button>          */}
             </Nav>
           </Navbar.Collapse>
