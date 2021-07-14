@@ -4,7 +4,6 @@ import Footer from './Footer';
 import { FaChevronUp } from 'react-icons/fa';
 export default function Layout({ title, keywords, description, children }) {
   const scrollTop = () => {
-    console.log('hello');
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   };
