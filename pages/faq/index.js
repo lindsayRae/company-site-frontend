@@ -23,9 +23,87 @@ export default function FAQPage() {
         </Container>
       </div>
 
-      <section className='faq-area ptb-120'>
+      <section className='team-details-area ptb-120'>
         <Container>
-          <div className='faq-accordion'>
+          <Row className='align-items-center'>
+            <Col>
+              <div className='section-title'>
+                <span>Frequently Asked Questions</span>
+                <h2>You Asked, We answered</h2>
+              </div>
+            </Col>
+          </Row>
+          <Row className='h-100 align-items-center'>
+            <Col lg='12'>
+              <div className='team-details-info'>
+                <h3>This is question number one.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                  at ultricies felis. Fusce gravida tempor pretium. Nunc auctor
+                  ex eget tempor accumsan. Vestibulum elementum at nulla ut
+                  tempor. Sed interdum auctor enim, non sagittis magna pharetra
+                  eget. Vestibulum eget molestie augue, non eleifend nunc.
+                  Aliquam venenatis, nisl sed porttitor feugiat, lectus elit
+                  blandit augue, eu auctor leo ipsum non velit.
+                </p>
+              </div>
+            </Col>
+            <Col lg='12' className='pt-5'>
+              <div className='team-details-info'>
+                <h3>This is question number two.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                  at ultricies felis. Fusce gravida tempor pretium. Nunc auctor
+                  ex eget tempor accumsan. Vestibulum elementum at nulla ut
+                  tempor. Sed interdum auctor enim, non sagittis magna pharetra
+                  eget. Vestibulum eget molestie augue, non eleifend nunc.
+                  Aliquam venenatis, nisl sed porttitor feugiat, lectus elit
+                  blandit augue, eu auctor leo ipsum non velit.
+                </p>
+              </div>
+            </Col>
+            <Col lg='12' className='pt-5'>
+              <div className='team-details-info'>
+                <h3>This is question number three.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                  at ultricies felis. Fusce gravida tempor pretium. Nunc auctor
+                  ex eget tempor accumsan. Vestibulum elementum at nulla ut
+                  tempor. Sed interdum auctor enim, non sagittis magna pharetra
+                  eget. Vestibulum eget molestie augue, non eleifend nunc.
+                  Aliquam venenatis, nisl sed porttitor feugiat, lectus elit
+                  blandit augue, eu auctor leo ipsum non velit.
+                </p>
+              </div>
+            </Col>
+            <Col lg='12' className='pt-5'>
+              <div className='team-details-info'>
+                <h3>This is question number four.</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                  at ultricies felis. Fusce gravida tempor pretium. Nunc auctor
+                  ex eget tempor accumsan. Vestibulum elementum at nulla ut
+                  tempor. Sed interdum auctor enim, non sagittis magna pharetra
+                  eget. Vestibulum eget molestie augue, non eleifend nunc.
+                  Aliquam venenatis, nisl sed porttitor feugiat, lectus elit
+                  blandit augue, eu auctor leo ipsum non velit.
+                </p>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* <section className='faq-area ptb-120'>
+        <Container>
+          <div className='section-title'>
+            <span>Frequently Asked Questions</span>
+            <h2>You Asked, We answered</h2>
+            <div className='faq-accordion'>
+              <h3>This is question number one.</h3>
+            </div>
+
+            <div className='faq-accordion'>
             <Accordion defaultActiveKey='0'>
               <Card>
                 <Accordion.Toggle
@@ -69,7 +147,7 @@ export default function FAQPage() {
             </Accordion>
           </div>
         </Container>
-      </section>
+      </section> */}
     </Layout>
   );
 }
