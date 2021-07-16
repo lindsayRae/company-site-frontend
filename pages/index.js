@@ -118,13 +118,6 @@ export default function HomePage() {
                   Kylee Hanhold<span>Owner at Shirley Sei Bella Salon</span>
                 </h3>
               </div>
-              {/* <Image
-                src='/images/Quote.png'
-                // className='quote-img'
-                alt='quote'
-                width={395}
-                height={263}
-              /> */}
             </Col>
           </Row>
         </Container>
@@ -202,7 +195,7 @@ export default function HomePage() {
       <section className='how-we-work ptb-120'>
         <Container>
           <div className='section-title'>
-            <h2>Founders Note</h2>
+            <h2 className='text-green'>Founders Note</h2>
           </div>
           <p className='text-center'>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
