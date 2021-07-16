@@ -33,7 +33,7 @@ export default function BlogItem({ b }) {
             </div>
           </div>
           <div className='blog-post-content'>
-            <span className='date'>{formateDate(b.date)}</span>
+            <span className='date text-blue'>{formateDate(b.date)}</span>
             <h3>
               <a>{b.title}</a>
             </h3>
