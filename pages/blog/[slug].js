@@ -43,6 +43,7 @@ export default function SingleBlogPage({ b }) {
                     }
                     width={1110}
                     height={700}
+                    alt='image of blog'
                   />
                   <div className='date'>{formateDate(b.date)}</div>
                 </div>
@@ -63,41 +64,40 @@ export default function SingleBlogPage({ b }) {
     </Layout>
   );
 }
+//? We thing this didn't build right because of the timing with heroku. Traversity Media Udemy Section 9 #49 min 3
+// export async function getStaticPaths() {
+//   const res = await fetch(`${API_URL}/blogs`);
+//   const blogs = await res.json();
 
-export async function getStaticPaths() {
-  const res = await fetch(`${API_URL}/blogs`);
+//   const paths = blogs.map((b) => ({
+//     params: { slug: b.slug },
+//   }));
+
+//   return {
+//     paths,
+//     fallback: true,
+//   };
+// }
+
+// export async function getStaticProps({ params: { slug } }) {
+//   const res = await fetch(`${API_URL}/blogs/?slug=${slug}`);
+//   const blogs = await res.json();
+
+//   return {
+//     props: {
+//       b: blogs[0],
+//     },
+//     revalidate: 1,
+//   };
+// }
+
+export async function getServerSideProps({ query: { slug } }) {
+  const res = await fetch(`${API_URL}/blogs?slug=${slug}`);
   const blogs = await res.json();
-
-  const paths = blogs.map((b) => ({
-    params: { slug: b.slug },
-  }));
-
-  return {
-    paths,
-    fallback: true,
-  };
-}
-
-export async function getStaticProps({ params: { slug } }) {
-  const res = await fetch(`${API_URL}/blogs/?slug=${slug}`);
-  const blogs = await res.json();
-
+  console.log('getServerSideProps: ', blogs);
   return {
     props: {
       b: blogs[0],
     },
-    revalidate: 1,
   };
 }
-
-// export async function getServerSideProps({ query: { id }}) {
-
-//   const res = await fetch(`${API_URL}/api/blogs/${id}`)
-//   const blogs = await res.json()
-//   console.log(blogs)
-//   return {
-//     props: {
-//       b: blogs[0]
-//     }
-//   }
-// }

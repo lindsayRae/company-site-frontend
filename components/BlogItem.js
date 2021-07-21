@@ -25,6 +25,7 @@ export default function BlogItem({ b }) {
                   }
                   width={350}
                   height={233}
+                  alt='image of blog'
                 />
               </a>
             </Link>

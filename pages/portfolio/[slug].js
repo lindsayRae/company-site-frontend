@@ -6,7 +6,7 @@ import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 
 export default function SinglePortfolioPage({ p }) {
-  console.log('singlePort', p);
+  console.log('SinglePortfolioPage', p);
   const techStack = p.techStack.split(', ');
   const role = p.role.split(', ');
   return (
@@ -40,6 +40,7 @@ export default function SinglePortfolioPage({ p }) {
                   }
                   width={1110}
                   height={700}
+                  alt='image of portfolio'
                 />
               </div>
             </Col>
@@ -64,14 +65,14 @@ export default function SinglePortfolioPage({ p }) {
                     Tech Stack
                     {techStack.length === 0 && <span>None</span>}
                     {techStack.map((str) => (
-                      <span>{str}</span>
+                      <span key={str}>{str}</span>
                     ))}
                   </li>
                   <li>
                     Role
                     {role.length === 0 && <span>None</span>}
                     {role.map((str) => (
-                      <span>{str}</span>
+                      <span key={str}>{str}</span>
                     ))}
                   </li>
                   <li>
@@ -102,28 +103,39 @@ export default function SinglePortfolioPage({ p }) {
   );
 }
 
-export async function getStaticPaths() {
-  const res = await fetch(`${API_URL}/portfolios`);
+// export async function getStaticPaths() {
+//   const res = await fetch(`${API_URL}/portfolios`);
+//   const portfolios = await res.json();
+
+//   const paths = portfolios.map((b) => ({
+//     params: { slug: b.slug },
+//   }));
+
+//   return {
+//     paths,
+//     fallback: true,
+//   };
+// }
+
+// export async function getStaticProps({ params: { slug } }) {
+//   const res = await fetch(`${API_URL}/portfolios/?slug=${slug}`);
+//   const portfolios = await res.json();
+
+//   return {
+//     props: {
+//       p: portfolios[0],
+//     },
+//     revalidate: 1,
+//   };
+// }
+
+export async function getServerSideProps({ query: { slug } }) {
+  const res = await fetch(`${API_URL}/portfolios?slug=${slug}`);
   const portfolios = await res.json();
-
-  const paths = portfolios.map((b) => ({
-    params: { slug: b.slug },
-  }));
-
-  return {
-    paths,
-    fallback: true,
-  };
-}
-
-export async function getStaticProps({ params: { slug } }) {
-  const res = await fetch(`${API_URL}/portfolios/?slug=${slug}`);
-  const portfolios = await res.json();
-
+  console.log(portfolios);
   return {
     props: {
-      p: portfolios[0],
+      b: portfolios[0],
     },
-    revalidate: 1,
   };
 }

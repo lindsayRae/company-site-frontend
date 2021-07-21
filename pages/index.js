@@ -100,6 +100,7 @@ export default function HomePage() {
                   src='/images/testimonials.jpg'
                   width={960}
                   height={700}
+                  alt='image of customer'
                 />
               </div>
             </Col>

@@ -8,6 +8,7 @@ import { Container, Row } from 'react-bootstrap';
 import Link from 'next/link';
 
 export default function BlogPage({ blogs, page, total }) {
+  console.log('BlogPage', blogs);
   return (
     <Layout>
       <div className='page-title-area item-bg1'>
@@ -48,10 +49,10 @@ export async function getServerSideProps({ query: { page = 1 } }) {
 
   //? Calculate start page
   const start = +page === 1 ? 0 : (+page - 1) * PER_PAGE;
-  console.log('start', start);
+
   //? Fetch total/count
   const totalRes = await fetch(`${API_URL}/blogs/count`);
-  console.log('***********************', totalRes);
+
   const total = await totalRes.json();
 
   // Need to build an

@@ -20,6 +20,7 @@ export default function BlogItem({ p }) {
                   }
                   width={350}
                   height={233}
+                  alt='image of portfolio item'
                 />
               </a>
             </Link>

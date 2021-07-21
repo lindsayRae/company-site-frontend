@@ -29,12 +29,14 @@ export default function FAQPage() {
                   height={565}
                   width={490}
                   className='front-img'
+                  alt='image of illustration'
                 />
                 <img
                   src='/images/2.jpg'
                   height={565}
                   width={490}
                   className='back-img'
+                  alt='image of square'
                 />
               </div>
             </Col>
@@ -85,12 +87,14 @@ export default function FAQPage() {
                   height={565}
                   width={490}
                   className='front-img'
+                  alt='image of illustration'
                 />
                 <img
                   src='/images/2.jpg'
                   height={565}
                   width={490}
                   className='back-img'
+                  alt='image of square'
                 />
               </div>
             </Col>
@@ -103,12 +107,14 @@ export default function FAQPage() {
                   height={565}
                   width={490}
                   className='front-img'
+                  alt='image of illustration'
                 />
                 <img
                   src='/images/2.jpg'
                   height={565}
                   width={490}
                   className='back-img'
+                  alt='image of square'
                 />
               </div>
             </Col>
@@ -159,12 +165,14 @@ export default function FAQPage() {
                   height={565}
                   width={490}
                   className='front-img'
+                  alt='image of illustration'
                 />
                 <img
                   src='/images/2.jpg'
                   height={565}
                   width={490}
                   className='back-img'
+                  alt='image of saquare'
                 />
               </div>
             </Col>

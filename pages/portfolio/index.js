@@ -7,7 +7,7 @@ import { Container, Row } from 'react-bootstrap';
 import Link from 'next/link';
 
 export default function PortfolioPage({ portfolios, page, total }) {
-  console.log(portfolios);
+  console.log('PortfolioPage', portfolios);
   return (
     <Layout>
       <div className='page-title-area item-bg1'>
