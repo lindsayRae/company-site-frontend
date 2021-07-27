@@ -6,14 +6,14 @@ import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className='footer-area ptb-120 pb-0'>
+    <footer className='ptb-120 pb-0' className={styles.footerArea}>
       <Container>
         <Row>
           <Col lg='3' md='6' sm='6'>
-            <div className='single-footer-widget'>
-              <div className='logo'>
+            <div className={styles.singleFooterWidget}>
+              <div className={styles.logo}>
                 <Link href='#'>
-                  <a>Zenso</a>
+                  <a>Rizzy</a>
                 </Link>
               </div>
               <p>
@@ -23,9 +23,9 @@ export default function Footer() {
             </div>
           </Col>
           <Col lg='3' md='6' sm='6'>
-            <div className='single-footer-widget ml-4'>
+            <div className='ml-4' className={styles.singleFooterWidget}>
               <h3>Quick Links</h3>
-              <ul className='list'>
+              <ul className={styles.list}>
                 <li>
                   <Link href='/'>
                     <a>Home</a>
@@ -60,9 +60,9 @@ export default function Footer() {
             </div>
           </Col>
           <Col lg='3' md='6' sm='6'>
-            <div className='single-footer-widget'>
+            <div className={styles.singleFooterWidget}>
               <h3>Recent Posts</h3>
-              <ul className='footer-recent-post'>
+              <ul className={styles.footerRecentPosts}>
                 <li>
                   <Link href='/blog/this-is-blog-one'>
                     <a>This is Blog One</a>
@@ -85,13 +85,13 @@ export default function Footer() {
             </div>
           </Col>
           <Col lg='3' md='6' sm='6'>
-            <div className='single-footer-widget'>
+            <div className={styles.singleFooterWidget}>
               <h3>Get In Touch</h3>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua.
               </p>
-              <ul className='footer-contact-info'>
+              <ul className={styles.footerContactInfo}>
                 <li>
                   <FaPhoneAlt />
                   <span>Phone: </span>303-123-1234
@@ -104,12 +104,12 @@ export default function Footer() {
             </div>
           </Col>
         </Row>
-        <div className='copyright-area'>
+        <div className={styles.copyRightArea}>
           <Row>
-            <Col lg='6' md='6'>
-              <p>Copyright &copy; Zenso 2021</p>
+            <Col lg='6' md='6' className={styles.textLeft}>
+              <p>Copyright &copy; Rizzy 2021</p>
             </Col>
-            <Col lg='6' md='6' className='text-right'>
+            <Col lg='6' md='6' className={styles.textRight}>
               <p>
                 Designed by{' '}
                 <Link href='https://envytheme.com' target='_blank'>
@@ -120,8 +120,12 @@ export default function Footer() {
           </Row>
         </div>
       </Container>
-      <img src='/images/line-bg.png' className='line-bg' alt='image of lines' />
-      <div className='shape23'>
+      <img
+        src='/images/line-bg.png'
+        className={styles.lineBG}
+        alt='image of lines'
+      />
+      <div className={styles.shape23}>
         <Image
           src='/images/shapes/23.png'
           width={215}
@@ -129,10 +133,15 @@ export default function Footer() {
           alt='image of circle shapes'
         />
       </div>
-      {/* <div className='shape24'>
-        <img src='/images/shapes/24.png' />
-      </div> */}
-      <div className='shape27'>
+      <div className={styles.shape24}>
+        <Image
+          src='/images/shapes/24.png'
+          width={215}
+          height={192}
+          alt='image of circle shapes'
+        />
+      </div>
+      <div className={styles.shape27}>
         <Image
           src='/images/shapes/27.png'
           width={116}
