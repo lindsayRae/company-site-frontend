@@ -6,7 +6,7 @@ import { FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className='ptb-120 pb-0' className={styles.footerArea}>
+    <footer className={styles.footerArea}>
       <Container>
         <Row>
           <Col lg='3' md='6' sm='6'>
@@ -23,7 +23,7 @@ export default function Footer() {
             </div>
           </Col>
           <Col lg='3' md='6' sm='6'>
-            <div className='ml-4' className={styles.singleFooterWidget}>
+            <div className={styles.singleFooterWidget}>
               <h3>Quick Links</h3>
               <ul className={styles.list}>
                 <li>
