@@ -1,34 +1,23 @@
+/*================================================
+  *** Mobil First CSS
+=================================================*/
+
+/*==============
+  Hero Section
+================*/
 .showcase {
   height: 100vh;
   width: 100%;
-  background: #000 url('../public/images/keren-levand-pm-e64IOYHM-unsplash.jpg')
-    no-repeat center center;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-.showcase::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.4);
-}
-
-.showcase * {
-  z-index: 20;
-}
-
 .showcase h1 {
-  font-size: 55px;
+  font-size: 33px;
   font-weight: 700;
   text-transform: capitalize;
-  margin-bottom: 0;
 }
 .showcase p {
   color: #121619;
@@ -38,4 +27,77 @@
   margin-bottom: 30px;
   margin-top: 25px;
   font-size: 18px;
+}
+
+/*====================
+ Testimonial Section
+======================*/
+.feedback {
+  max-width: 920px;
+  margin-bottom: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.feedback p {
+  font-size: 20px;
+  font-style: italic;
+  font-family: 'Rubik', sans-serif;
+  font-weight: 300;
+  color: var(--black);
+  margin-bottom: 20px;
+}
+
+.feedback h3 {
+  display: inline-block;
+  margin: 0;
+  font-size: 20px;
+  color: var(--black);
+  padding-bottom: 10px;
+}
+
+.feedback span {
+  display: inline-block;
+  color: var(--black);
+  margin-left: 4px;
+  font-size: 15px;
+  font-weight: 400;
+}
+/*================================================
+  *** 600 px onward
+=================================================*/
+@media (min-width: 600px) {
+  /*===========
+  Hero Section
+===============*/
+  .showcase {
+    background: #000 url('../public/images/landing-hero1920x1080.jpg') no-repeat
+      center center;
+    position: relative;
+  }
+
+  .showcase::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .showcase * {
+    z-index: 20;
+  }
+
+  .showcase h1 {
+    font-size: 55px;
+    margin-bottom: 0;
+  }
 }

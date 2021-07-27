@@ -97,18 +97,18 @@ export default function HomePage() {
                 {/* Photo by <a href="https://unsplash.com/@kobuagency?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">KOBU Agency</a> on <a href="https://unsplash.com/s/photos/team?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a> */}
 
                 <Image
-                  src='/images/testimonials.jpg'
+                  src='/images/testimonials960x640.jpg'
                   width={960}
-                  height={700}
+                  height={640}
                   alt='image of customer'
                 />
               </div>
             </Col>
-            <Col lg='6' md='6' className='p-0 testimonal-block'>
+            <Col lg='6' md='6' className={styles.testimonial}>
               <div className='section-title pt-5 '>
                 <h2>Testimonials</h2>
               </div>
-              <div className='single-feedback '>
+              <div className={styles.feedback}>
                 <p>
                   "Quis ipsum suspendisse ultrices gravida. Risus commodo
                   viverra maecenas accumsan lacus vel facilisis. Consectetur
