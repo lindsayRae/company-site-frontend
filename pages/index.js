@@ -135,7 +135,7 @@ export default function HomePage() {
             <h2>preview your experience</h2>
           </div>
           <Row>
-            <Col lg='3' md='6' sm='6'>
+            <Col lg='3' md='6' sm='6' className='pt-2'>
               <div className='single-work-box'>
                 <div className='number'>01</div>
                 <h3>Define Business Objectives & Requirements</h3>
@@ -148,7 +148,7 @@ export default function HomePage() {
                 <FaRegLightbulb className='process-icons' />
               </div>
             </Col>
-            <Col lg='3' md='6' sm='6'>
+            <Col lg='3' md='6' sm='6' className='pt-2'>
               <div className='single-work-box'>
                 <div className='number'>02</div>
                 <h3>Create An Action Plan</h3>
@@ -161,7 +161,7 @@ export default function HomePage() {
                 <FaClipboardList className='process-icons' />
               </div>
             </Col>
-            <Col lg='3' md='6' sm='6'>
+            <Col lg='3' md='6' sm='6' className='pt-2'>
               <div className='single-work-box'>
                 <div className='number'>03</div>
                 <h3>Prototyping</h3>
@@ -173,7 +173,7 @@ export default function HomePage() {
                 <FaLaptopCode className='process-icons' />
               </div>
             </Col>
-            <Col lg='3' md='6' sm='6'>
+            <Col lg='3' md='6' sm='6' className='pt-2'>
               <div className='single-work-box'>
                 <div className='number'>04</div>
                 <h3>Development & Deployment</h3>

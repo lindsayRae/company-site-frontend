@@ -121,7 +121,7 @@ export default function Footer() {
         </div>
       </Container>
       <img
-        src='/images/line-bg.png'
+        src='/images/line-bg.webp'
         className={styles.lineBG}
         alt='image of lines'
       />

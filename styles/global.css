@@ -360,11 +360,12 @@ Navbar CSS
 }
 
 .how-we-work.bg-image {
-  background-image: url(/images/bg-shape239x414.jpg);
+  /* background-image: url(/images/bg-shape239x414.jpg);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: cover;
+  background-size: cover; */
+  background-color: #f3f3f3;
 }
 /*================================================
 Main Banner CSS
