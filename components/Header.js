@@ -1,18 +1,5 @@
-import Link from 'next/link';
-import styles from '@/styles/Header.module.css';
 // https://www.youtube.com/watch?v=6S52Oywgdlk&t=151s
-import {
-  Container,
-  Button,
-  Navbar,
-  Nav,
-  Brand,
-  Toggle,
-  Collapse,
-  NavDropdown,
-  Form,
-  FormControl,
-} from 'react-bootstrap';
+import { Container, Navbar, Nav } from 'react-bootstrap';
 
 export default function Header() {
   return (

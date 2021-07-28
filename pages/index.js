@@ -78,7 +78,7 @@ export default function HomePage() {
             </Col>
             <Col lg='12' className='more-services-btn'>
               <Link href='/services'>
-                <a className='btn btn-primary'>Read More</a>
+                <a className='btn btn-primary'>Services Details</a>
               </Link>
             </Col>
           </Row>
@@ -196,7 +196,7 @@ export default function HomePage() {
       <section className='how-we-work ptb-120'>
         <Container>
           <div className='section-title'>
-            <h2 className='text-green'>Founders Note</h2>
+            <h2>Founders Note</h2>
           </div>
           <p className='text-center'>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
