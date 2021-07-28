@@ -31,6 +31,7 @@
   right: 0;
   margin: 0 auto;
   text-align: center;
+  display: none;
 }
 
 .footerArea {
@@ -50,6 +51,7 @@
   left: 0;
   opacity: 0.6;
   z-index: -1;
+  display: none;
 }
 
 .footer-area .shape18 {
@@ -203,11 +205,17 @@
 }
 
 @media (min-width: 600px) {
+  .lineBG {
+    display: block;
+  }
   .shape23 {
     display: block;
   }
 
   .shape24 {
+    display: block;
+  }
+  .shape27 {
     display: block;
   }
   .footerArea {
