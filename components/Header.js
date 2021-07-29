@@ -6,7 +6,7 @@ export default function Header() {
     <header>
       <Navbar bg='light' expand='lg' fixed='top'>
         <Container>
-          <Navbar.Brand href='/'>Lindsay's Co</Navbar.Brand>
+          <Navbar.Brand href='/'>Rizzy</Navbar.Brand>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse
             id='basic-navbar-nav'

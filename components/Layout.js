@@ -29,7 +29,7 @@ export default function Layout({ title, keywords, description, children }) {
 }
 
 Layout.defaultProps = {
-  title: "Lindsay's Co Development",
+  title: 'Rizzy Co Development',
   description: 'webs services like websites, webapps and hosting',
   keywords: 'website, hosting, webapp',
 };
