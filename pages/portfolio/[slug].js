@@ -7,7 +7,7 @@ import ReactMarkdown from 'react-markdown';
 
 export default function SinglePortfolioPage({ p }) {
   console.log('SinglePortfolioPage', p);
-  const techStack = p.techStack.split(', ');
+  //const techStack = p.techStack.split(', ');
   const role = p.role.split(', ');
   return (
     <Layout>
@@ -63,10 +63,10 @@ export default function SinglePortfolioPage({ p }) {
                   </li>
                   <li>
                     Tech Stack
-                    {techStack.length === 0 && <span>None</span>}
+                    {/* {techStack.length === 0 && <span>None</span>}
                     {techStack.map((str) => (
                       <span key={str}>{str}</span>
-                    ))}
+                    ))} */}
                   </li>
                   <li>
                     Role

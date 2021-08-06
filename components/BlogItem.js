@@ -6,6 +6,7 @@ import { Col } from 'react-bootstrap';
 import { FaAngleDoubleRight } from 'react-icons/fa';
 
 export default function BlogItem({ b }) {
+  console.log(b);
   const formateDate = (date) => {
     let dateArr = date.split('-');
     let formattedDate = `${dateArr[1]}-${dateArr[2]}-${dateArr[0]}`;

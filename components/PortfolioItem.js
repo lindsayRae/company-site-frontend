@@ -5,14 +5,14 @@ import styles from '@/styles/Portfolio.module.css';
 import { Col } from 'react-bootstrap';
 import { FaAngleDoubleRight } from 'react-icons/fa';
 
-export default function BlogItem({ p }) {
+export default function PortfolioItem({ p }) {
   console.log(p);
   return (
     <>
       <Col lg='4' md='6'>
         <div className='single-blog-post'>
           <div className='blog-image'>
-            <Link href={`/blog/${p.slug}`}>
+            <Link href={`/portfolio/${p.slug}`}>
               <a>
                 <Image
                   src={

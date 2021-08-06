@@ -16,69 +16,43 @@ export default function ContactPage() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('heard');
 
     const formData = {};
-
+    let missingValue = false;
     Array.from(e.currentTarget.elements).forEach((field) => {
       if (!field.name) return;
-      if (!field.value) setError('Please fill in all form fields');
+      if (!field.value) {
+        missingValue = true;
+        return;
+      }
       formData[field.name] = field.value;
     });
-    console.log(formData);
 
-    try {
-      const response = await fetch('/api/mail', {
-        method: 'post',
-        body: JSON.stringify(formData),
-      });
-
-      const data = await response.json();
-      console.log('data from api: ', data);
-      if (data.status !== 'OK') {
-        setError(data.message);
-        return;
-      } else {
-        console.log('much success');
-        setEmailSent(true);
+    if (missingValue) {
+      setError('Please fill in all form fields');
+      return;
+    } else {
+      //! https://www.youtube.com/watch?v=QrVYLLpoyMw
+      //? deploy https://khushal87.hashnode.dev/linking-a-custom-domain-from-google-domains-to-vercel-app
+      try {
+        const response = await fetch('/api/mail', {
+          method: 'post',
+          body: JSON.stringify(formData),
+        });
+        const data = await response.json();
+        console.log('data from api: ', data);
+        if (data.status !== 'OK') {
+          setError(data.message);
+          return;
+        } else {
+          console.log('Email has been sent');
+          setEmailSent(true);
+        }
+      } catch (err) {
+        console.log('err: ', err);
+        setError('Something went wrong: ', err);
       }
-    } catch (err) {
-      console.log('err: ', err);
-      setError('Something went wrong: ', err);
     }
-
-    // let body = {
-    //   name: name,
-    //   //  email: email,
-    //   //  phone: phone,
-    //   //  subject: subject,
-    //   message: message,
-    // };
-
-    // console.log(body);
-    // //! https://www.youtube.com/watch?v=QrVYLLpoyMw
-    // try {
-    //   const response = await fetch('http://localhost:8082/email/send', {
-    //     method: 'POST',
-    //     headers: {
-    //       'Content-type': 'application/json',
-    //     },
-    //     body: JSON.stringify(body),
-    //   });
-
-    //   const data = await response.json();
-    //   console.log('data from api: ', data);
-    //   if (data.status !== 200) {
-    //     setError(data.message);
-    //     return;
-    //   } else {
-    //     //  setMessageSent(true);
-    //   }
-    // } catch (err) {
-    //   console.log('err: ', err);
-    //   setError('Something went wrong: ', err);
-    //   // setMessageSent(false);
-    // }
   };
 
   return (

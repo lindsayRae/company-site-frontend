@@ -6,6 +6,7 @@ import Link from 'next/link';
 import ReactMarkdown from 'react-markdown';
 // https://betterprogramming.pub/build-your-personal-blog-with-next-js-and-strapi-e092bf11d3db
 export default function SingleBlogPage({ b }) {
+  console.log('SingleBlogPage', b);
   const formateDate = (date) => {
     let dateArr = date.split('-');
     let formattedDate = `${dateArr[1]}-${dateArr[2]}-${dateArr[0]}`;
