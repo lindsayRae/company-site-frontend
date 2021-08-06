@@ -16,7 +16,7 @@ export default (req, res) => {
 
   const data = {
     to: process.env.SENDGRID_TO_EMAIL,
-    from: 'lbarnett712@gmail.com',
+    from: process.env.SENDGRID_FROM_EMAIL,
     subject: 'Contact form from rizzy.io',
     text: message,
     html: message.replace(/\r\n/g, '<br>'),
