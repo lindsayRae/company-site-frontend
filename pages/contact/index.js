@@ -40,6 +40,7 @@ export default function ContactPage() {
           body: JSON.stringify(formData),
         });
         const data = await response.json();
+
         console.log('data from api: ', data);
         if (data.status !== 'OK') {
           setError(data.message);
