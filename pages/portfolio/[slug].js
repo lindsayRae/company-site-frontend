@@ -7,7 +7,7 @@ import ReactMarkdown from 'react-markdown';
 
 export default function SinglePortfolioPage({ p }) {
   console.log('SinglePortfolioPage', p);
-  //const techStack = p.techStack.split(', ');
+  const techStack = p.techStack.split(', ');
   const role = p.role.split(', ');
   return (
     <Layout>
@@ -63,10 +63,10 @@ export default function SinglePortfolioPage({ p }) {
                   </li>
                   <li>
                     Tech Stack
-                    {/* {techStack.length === 0 && <span>None</span>}
+                    {techStack.length === 0 && <span>None</span>}
                     {techStack.map((str) => (
                       <span key={str}>{str}</span>
-                    ))} */}
+                    ))}
                   </li>
                   <li>
                     Role
@@ -84,16 +84,7 @@ export default function SinglePortfolioPage({ p }) {
             <Col lg='12' md='8'>
               <div className='portfolio-details-content'>
                 <h3>{p.title}</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Atque eum alias debitis suscipit, sint dignissimos minus
-                  quisquam recusandae nostrum quas eligendi odit, fugiat eius
-                  rem. Cumque, labore placeat! Velit, vitae. Lorem ipsum dolor
-                  sit amet consectetur adipisicing elit. Nemo, iste? Aut ipsam
-                  consequuntur non rem tenetur dolore consequatur ducimus a
-                  labore excepturi quae nisi, quisquam, maxime voluptates magnam
-                  aliquid. Cupiditate!
-                </p>
+                <p>{p.description}</p>
               </div>
             </Col>
           </Row>
