@@ -132,10 +132,10 @@ export default function SinglePortfolioPage({ p }) {
 export async function getServerSideProps({ query: { slug } }) {
   const res = await fetch(`${API_URL}/portfolios?slug=${slug}`);
   const portfolios = await res.json();
-  console.log(portfolios);
+  console.log('getServerSideProps: ', portfolios);
   return {
     props: {
-      b: portfolios[0],
+      p: portfolios[0],
     },
   };
 }
