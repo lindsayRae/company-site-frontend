@@ -1,12 +1,11 @@
 import Layout from '@/components/Layout';
 import { API_URL, PER_PAGE } from '@/config/index';
 import PortfolioItem from '@/components/PortfolioItem';
-import Pagination from '@/components/Pagination';
 import { Container, Row } from 'react-bootstrap';
 
 import Link from 'next/link';
 
-export default function PortfolioPage({ portfolios, page, total }) {
+export default function PortfolioPage({ portfolios }) {
   console.log('PortfolioPage', portfolios);
   return (
     <Layout>
@@ -32,7 +31,6 @@ export default function PortfolioPage({ portfolios, page, total }) {
               <PortfolioItem key={p.id} p={p} />
             ))}
           </Row>
-          <Pagination page={page} total={total} />
         </Container>
       </section>
     </Layout>
@@ -40,25 +38,23 @@ export default function PortfolioPage({ portfolios, page, total }) {
 }
 
 //? runs server side
-export async function getServerSideProps({ query: { page = 1 } }) {
+export async function getServerSideProps() {
   //? Calculate start page
-  const start = +page === 1 ? 0 : (+page - 1) * PER_PAGE;
-  console.log('start', start);
+  // const start = +page === 1 ? 0 : (+page - 1) * PER_PAGE;
+  // console.log('start', start);
   //? Fetch total/count
-  const totalRes = await fetch(`${API_URL}/portfolios/count`);
+  // const totalRes = await fetch(`${API_URL}/portfolios/count`);
 
-  const total = await totalRes.json();
+  // const total = await totalRes.json();
 
   // Need to build an
 
-  //? Fetch Blogs
-  const portfolioRes = await fetch(
-    `${API_URL}/portfolios?_limit=${PER_PAGE}&_start=${start}`
-  );
+  //? Fetch Portfolios
+  const portfolioRes = await fetch(`${API_URL}/portfolios`);
   const portfolios = await portfolioRes.json();
 
-  console.log('**', portfolios, page);
+  console.log('**', portfolios);
   return {
-    props: { portfolios, page: +page, total },
+    props: { portfolios },
   };
 }
