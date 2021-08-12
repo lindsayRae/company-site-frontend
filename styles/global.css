@@ -670,65 +670,6 @@ About CSS
 }
 
 /*================================================
-Why Choose Us CSS
-=================================================*/
-.why-choose-us-area {
-  position: relative;
-  overflow: hidden;
-  z-index: 1;
-}
-
-.why-choose-us-area .align-items-center:hover .why-choose-us-img .front-img {
-  top: 15px;
-}
-
-.why-choose-us-area .align-items-center:hover .why-choose-us-img .back-img {
-  left: 30px;
-}
-
-.why-choose-us-img {
-  margin-bottom: 35px;
-  /* position: relative; */
-}
-
-.why-choose-us-img .front-img {
-  position: relative;
-  z-index: 1;
-  top: 35px;
-  left: 35px;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-
-.why-choose-us-img .back-img {
-  position: absolute;
-  left: 15px;
-  top: 0;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
-}
-
-.why-choose-us-content .section-title {
-  margin-bottom: 20px;
-  text-align: left;
-}
-
-.why-choose-us-content .section-title h2 {
-  margin-left: 0;
-}
-
-.why-choose-us-content .btn {
-  margin-top: 20px;
-}
-
-.circle-dot {
-  position: absolute;
-  top: -380px;
-  left: -45px;
-  z-index: -1;
-}
-
-/*================================================
 Our Work CSS
 =================================================*/
 

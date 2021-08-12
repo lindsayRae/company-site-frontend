@@ -2,6 +2,7 @@ import Layout from '@/components/Layout';
 import { Container, Row, Col } from 'react-bootstrap';
 import Link from 'next/link';
 import Image from 'next/image';
+import styles from '@/styles/Services.module.css';
 
 export default function FAQPage() {
   return (
@@ -19,29 +20,23 @@ export default function FAQPage() {
           </ul>
         </Container>
       </div>
-      <section className='why-choose-us-area ptb-120'>
+      <section className={styles.serviceArea}>
         <Container>
-          <Row className='row h-100 align-items-center'>
-            <Col lg='6' md='12'>
-              <div className='why-choose-us-img'>
+          <Row className='row h-100 pt-5 align-items-center'>
+            <Col lg='6' md='12' className={styles.images}>
+              <div className={styles.servicesImg}>
                 <img
-                  src='/images/1.jpg'
-                  height={565}
-                  width={490}
-                  className='front-img'
+                  src='/images/web-app.jpg'
+                  height={400}
+                  width={400}
+                  className={styles.frontImg}
                   alt='image of illustration'
                 />
-                <img
-                  src='/images/2.jpg'
-                  height={565}
-                  width={490}
-                  className='back-img'
-                  alt='image of square'
-                />
+                <div className={styles.backImg}></div>
               </div>
             </Col>
-            <Col lg='6' md='12'>
-              <div className='why-choose-us-content'>
+            <Col lg='6' md='12' className={styles.text}>
+              <div className={styles.servicesContent}>
                 <div className='section-title'>
                   <span>Most Popular</span>
                   <h2>Custom Web App Development </h2>
@@ -60,9 +55,9 @@ export default function FAQPage() {
               </div>
             </Col>
           </Row>
-          <Row className='row h-100 align-items-center'>
-            <Col lg='6' md='12'>
-              <div className='why-choose-us-content'>
+          <Row className='row h-100 pt-5 align-items-center'>
+            <Col lg='6' md='12' className={styles.text}>
+              <div className={styles.servicesContent}>
                 <div className='section-title'>
                   <span>Most Popular</span>
                   <h2>Cloud Hosting</h2>
@@ -80,46 +75,34 @@ export default function FAQPage() {
                 </p>
               </div>
             </Col>
-            <Col lg='6' md='12'>
-              <div className='why-choose-us-img'>
+            <Col lg='6' md='12' className={styles.images}>
+              <div className={styles.servicesImg}>
                 <img
-                  src='/images/1.jpg'
-                  height={565}
-                  width={490}
-                  className='front-img'
+                  src='/images/cloud.jpg'
+                  height={400}
+                  width={400}
+                  className={styles.frontImg}
                   alt='image of illustration'
                 />
-                <img
-                  src='/images/2.jpg'
-                  height={565}
-                  width={490}
-                  className='back-img'
-                  alt='image of square'
-                />
+                <div className={styles.backImg}></div>
               </div>
             </Col>
           </Row>
-          <Row className='row h-100 align-items-center'>
-            <Col lg='6' md='12'>
-              <div className='why-choose-us-img'>
+          <Row className='row h-100 pt-5 align-items-center'>
+            <Col lg='6' md='12' className={styles.images}>
+              <div className={styles.servicesImg}>
                 <img
-                  src='/images/1.jpg'
-                  height={565}
-                  width={490}
-                  className='front-img'
+                  src='/images/email.jpg'
+                  height={400}
+                  width={400}
+                  className={styles.frontImg}
                   alt='image of illustration'
                 />
-                <img
-                  src='/images/2.jpg'
-                  height={565}
-                  width={490}
-                  className='back-img'
-                  alt='image of square'
-                />
+                <div className={styles.backImg}></div>
               </div>
             </Col>
-            <Col lg='6' md='12'>
-              <div className='why-choose-us-content'>
+            <Col lg='6' md='12' className={styles.text}>
+              <div className={styles.servicesContent}>
                 <div className='section-title'>
                   <span>Most Popular</span>
                   <h2>Email Marketing</h2>
@@ -138,9 +121,9 @@ export default function FAQPage() {
               </div>
             </Col>
           </Row>
-          <Row className='row h-100 align-items-center'>
-            <Col lg='6' md='12'>
-              <div className='why-choose-us-content'>
+          <Row className='row h-100 pt-5 pb-5 align-items-center'>
+            <Col lg='6' md='12' className={styles.text}>
+              <div className={styles.servicesContent}>
                 <div className='section-title'>
                   <span>Most Popular</span>
                   <h2>Digital Marketing</h2>
@@ -158,22 +141,16 @@ export default function FAQPage() {
                 </p>
               </div>
             </Col>
-            <Col lg='6' md='12'>
-              <div className='why-choose-us-img'>
+            <Col lg='6' md='12' className={styles.images}>
+              <div className={styles.servicesImg}>
                 <img
-                  src='/images/1.jpg'
-                  height={565}
-                  width={490}
-                  className='front-img'
+                  src='/images/digital.jpg'
+                  height={400}
+                  width={400}
+                  className={styles.frontImg}
                   alt='image of illustration'
                 />
-                <img
-                  src='/images/2.jpg'
-                  height={565}
-                  width={490}
-                  className='back-img'
-                  alt='image of saquare'
-                />
+                <div className={styles.backImg}></div>
               </div>
             </Col>
           </Row>

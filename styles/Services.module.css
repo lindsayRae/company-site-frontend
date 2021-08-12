@@ -1,0 +1,73 @@
+/*================================================
+  *** Mobil First CSS
+=================================================*/
+
+/*================================================
+Why Choose Us CSS
+=================================================*/
+.servicesArea {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.servicesImg {
+  margin-bottom: 35px;
+  display: flex;
+  justify-content: center;
+}
+
+.servicesImg .frontImg {
+  position: relative;
+  z-index: 1;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.servicesContent .section-title {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.images {
+  order: 1;
+}
+.text {
+  order: 2;
+}
+
+.servicesContent .section-title h2 {
+  margin-left: 0;
+}
+
+@media (min-width: 992px) {
+  .backImg {
+    height: 400px;
+    width: 400px;
+    background-color: var(--green);
+  }
+  .servicesImg .backImg {
+    position: absolute;
+    left: 15px;
+    top: 0;
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+  }
+  .servicesImg {
+    justify-content: start;
+  }
+  .servicesImg > img:hover {
+    top: 15px;
+    left: -15px;
+  }
+  .servicesImg .frontImg {
+    top: 35px;
+    left: 35px;
+  }
+  .images {
+    order: 1;
+  }
+  .text {
+    order: 1;
+  }
+}
