@@ -40,7 +40,7 @@ export default function BlogItem({ b }) {
             <p>{b.summary}</p>
             <Link href={`/blog/${b.slug}`}>
               <a className='read-more-btn'>
-                Read Full Blog <FaAngleDoubleRight />
+                Read Full Article <FaAngleDoubleRight />
               </a>
             </Link>
           </div>
