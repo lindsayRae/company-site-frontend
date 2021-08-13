@@ -84,7 +84,7 @@ export default function SinglePortfolioPage({ p }) {
             <Col lg='12' md='8'>
               <div className='portfolio-details-content'>
                 <h3>{p.title}</h3>
-                <p>{p.description}</p>
+                <ReactMarkdown>{p.description}</ReactMarkdown>
               </div>
             </Col>
           </Row>
