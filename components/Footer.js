@@ -136,8 +136,8 @@ export default function Footer() {
       <div className={styles.shape24}>
         <Image
           src='/images/shapes/24.png'
-          width={215}
-          height={192}
+          width={216}
+          height={182}
           alt='image of circle shapes'
         />
       </div>

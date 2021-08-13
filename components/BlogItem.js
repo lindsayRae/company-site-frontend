@@ -31,14 +31,12 @@ export default function BlogItem({ b }) {
               </a>
             </Link>
             <div className='post-tag'>
-              <a href='#'>{b.tag}</a>
+              <p>{b.tag}</p>
             </div>
           </div>
           <div className='blog-post-content'>
             <span className='date text-blue'>{formateDate(b.date)}</span>
-            <h3>
-              <a>{b.title}</a>
-            </h3>
+            <h3>{b.title}</h3>
             <p>{b.summary}</p>
             <Link href={`/blog/${b.slug}`}>
               <a className='read-more-btn'>
