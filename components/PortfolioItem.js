@@ -30,13 +30,11 @@ export default function PortfolioItem({ p }) {
             <div className={styles.portfolioTag}>
               <span>{p.tag}</span>
             </div>
-            <h3>
-              <a>{p.title}</a>
-            </h3>
+            <h3>{p.title}</h3>
             <p>{p.summary}</p>
             <Link href={`/portfolio/${p.slug}`}>
               <a className='read-more-btn'>
-                Read More <FaAngleDoubleRight />
+                {p.title} Details <FaAngleDoubleRight />
               </a>
             </Link>
           </div>
