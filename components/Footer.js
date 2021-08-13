@@ -65,19 +65,19 @@ export default function Footer() {
               <ul className={styles.footerRecentPosts}>
                 <li>
                   <Link href='/blog/this-is-blog-one'>
-                    <a href='/blog/this-is-blog-one'>This is Blog One</a>
+                    <a>This is Blog One</a>
                   </Link>
                   <span>July 1st, 2021</span>
                 </li>
                 <li>
                   <Link href='/blog/this-is-blog-two'>
-                    <a href='/blog/this-is-blog-two'>This is Blog Two</a>
+                    <a>This is Blog Two</a>
                   </Link>
                   <span>July 2nd, 2021</span>
                 </li>
                 <li>
                   <Link href='/blog/this-is-blog-three'>
-                    <a href='/blog/this-is-blog-three'>This is Blog Three</a>
+                    <a>This is Blog Three</a>
                   </Link>
                   <span>July 3rd, 2021</span>
                 </li>
@@ -136,8 +136,8 @@ export default function Footer() {
       <div className={styles.shape24}>
         <Image
           src='/images/shapes/24.png'
-          width={216}
-          height={182}
+          width={215}
+          height={192}
           alt='image of circle shapes'
         />
       </div>
