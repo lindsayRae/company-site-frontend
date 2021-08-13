@@ -31,7 +31,7 @@ export default function BlogItem({ b }) {
               </a>
             </Link>
             <div className='post-tag'>
-              <a href='#'>{b.tag}</a>
+              <p>{b.tag}</p>
             </div>
           </div>
           <div className='blog-post-content'>

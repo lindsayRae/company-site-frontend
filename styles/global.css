@@ -927,7 +927,7 @@ Blog CSS
   transition: var(--transition);
 }
 
-.single-blog-post .blog-image .post-tag a {
+.single-blog-post .blog-image .post-tag p {
   background: var(--green);
   color: var(--white);
   padding: 9px 28px;
