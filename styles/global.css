@@ -1129,6 +1129,10 @@ Blog Details CSS
   border-radius: 3px;
 }
 
+.blog-details-area .blog-details .article-content h2 {
+  margin-top: 26px;
+}
+
 .blog-details-area .blog-details .article-content h3 {
   font-size: 22px;
   margin-bottom: -2px;
@@ -1153,148 +1157,10 @@ Blog Details CSS
   font-size: 18px;
 }
 
-.blog-details-area .blog-details .article-content .share-post {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.blog-details-area .blog-details .article-content .share-post ul li {
-  margin: 0 2px;
-}
-
-.blog-details-area .blog-details .article-content .share-post ul li a {
-  width: 40px;
-  font-size: 15px;
-  height: 40px;
-  display: inline-block;
-  line-height: 38px;
-  border: 1px solid #eeeeee;
-  border-radius: 50%;
-  color: #555555;
-}
-
-.blog-details-area .blog-details .article-content .share-post ul li a:hover,
-.blog-details-area .blog-details .article-content .share-post ul li a:focus {
-  color: var(--white);
-  border-color: var(--green);
-  background-color: var(--green);
-}
-
 .blog-details-area .blog-details .article-content ul {
   padding: 0;
   margin: 0;
   list-style-type: none;
-}
-
-.blog-details-area .post-controls-buttons {
-  overflow: hidden;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  background: var(--white);
-  padding: 30px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035),
-    0 7px 18px rgba(0, 9, 128, 0.05);
-  box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035),
-    0 7px 18px rgba(0, 9, 128, 0.05);
-}
-
-.blog-details-area .post-controls-buttons .controls-left {
-  float: left;
-}
-
-.blog-details-area .post-controls-buttons .controls-right {
-  float: right;
-}
-
-.blog-details-area .post-controls-buttons div a {
-  border: 1px solid #eeeeee;
-  padding: 8px 20px;
-  display: inline-block;
-  border-radius: 5px;
-  font-weight: 500;
-}
-
-.blog-details-area .post-controls-buttons div a:hover,
-.blog-details-area .post-controls-buttons div a:focus {
-  color: var(--white);
-  background: var(--green);
-  border-color: var(--green);
-}
-
-.blog-details-area .post-comments {
-  padding: 30px;
-  background: var(--white);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035),
-    0 7px 18px rgba(0, 9, 128, 0.05);
-  box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035),
-    0 7px 18px rgba(0, 9, 128, 0.05);
-}
-
-.blog-details-area .post-comments h3 {
-  font-size: 22px;
-  margin-bottom: 5px;
-}
-
-.blog-details-area .post-comments .single-comment {
-  position: relative;
-  padding-left: 95px;
-  margin-top: 30px;
-}
-
-.blog-details-area .post-comments .single-comment .comment-img {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 75px;
-  height: 75px;
-}
-
-.blog-details-area .post-comments .single-comment .comment-img img {
-  border-radius: 50%;
-}
-
-.blog-details-area .post-comments .single-comment .comment-content h4 {
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-.blog-details-area .post-comments .single-comment .comment-content span {
-  color: var(--paragraph-color);
-  font-size: 14px;
-}
-
-.blog-details-area .post-comments .single-comment .comment-content p {
-  margin-bottom: 15px;
-}
-
-.blog-details-area .post-comments .single-comment .comment-content a {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.blog-details-area .post-comments .single-comment.left-m {
-  margin-left: 85px;
-}
-
-.blog-details-area .leave-a-reply {
-  padding: 30px;
-  background: var(--white);
-  -webkit-box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035),
-    0 7px 18px rgba(0, 9, 128, 0.05);
-  box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035),
-    0 7px 18px rgba(0, 9, 128, 0.05);
-  margin-top: 25px;
-}
-
-.blog-details-area .leave-a-reply h3 {
-  font-size: 22px;
-  margin-bottom: 30px;
-}
-
-#map {
-  height: 500px;
-  width: 100%;
 }
 
 /*================================================
@@ -1363,101 +1229,6 @@ Portfolio Details CSS
 .portfolio-details-content h3 {
   font-size: 22px;
   margin-bottom: 15px;
-}
-
-/*================================================
-Login CSS
-=================================================*/
-.login-form {
-  background: var(--white);
-  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-  padding: 40px;
-  border-radius: 5px;
-}
-
-.login-form h3 {
-  font-size: 22px;
-  margin-bottom: 8px;
-}
-
-.login-form p {
-  margin-bottom: 30px;
-}
-
-.login-form form .form-check {
-  margin-top: 18px;
-}
-
-.login-form form .form-check .form-check-label {
-  color: var(--paragraph-color);
-  position: relative;
-  top: -2px;
-}
-
-.login-form form .forgot-password {
-  margin-bottom: 20px;
-  margin-top: 11px;
-}
-
-.login-form form .forgot-password a {
-  color: var(--paragraph-color);
-}
-
-.login-form form .forgot-password a:hover {
-  color: var(--green);
-}
-
-.login-form form .btn {
-  margin-bottom: 20px;
-  margin-top: 10px;
-}
-
-.login-form form span {
-  display: block;
-  color: var(--paragraph-color);
-}
-
-.login-form form span a {
-  color: var(--green);
-}
-
-/*================================================
-Signup CSS
-=================================================*/
-.signup-form {
-  background: var(--white);
-  -webkit-box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
-  padding: 40px;
-  border-radius: 5px;
-}
-
-.signup-form h3 {
-  font-size: 22px;
-  margin-bottom: 25px;
-}
-
-.signup-form form .form-check {
-  margin-top: 10px;
-}
-
-.signup-form form .form-check .form-check-label {
-  color: var(--paragraph-color);
-}
-
-.signup-form form .btn {
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.signup-form form span {
-  display: block;
-  color: var(--paragraph-color);
-}
-
-.signup-form form span a {
-  color: var(--green);
 }
 
 /*================================================
