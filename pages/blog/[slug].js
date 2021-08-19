@@ -37,7 +37,6 @@ export default function SingleBlogPage({ b }) {
           <Row>
             <Col>
               <div className='blog-details'>
-                <h1>{b.title}</h1>
                 <div className='article-img'>
                   <Image
                     src={
@@ -55,6 +54,7 @@ export default function SingleBlogPage({ b }) {
                       <a>{b.tag}</a>
                     </li>
                   </ul>
+                  <h1>{b.title}</h1>
                   <ReactMarkdown>{b.description}</ReactMarkdown>
                 </div>
               </div>
