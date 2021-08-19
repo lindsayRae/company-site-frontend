@@ -105,7 +105,7 @@ img {
 }
 
 a {
-  color: var(--black);
+  color: var(--green);
   display: inline-block;
   -webkit-transition: var(--transition);
   transition: var(--transition);
