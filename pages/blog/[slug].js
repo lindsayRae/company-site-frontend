@@ -53,11 +53,15 @@ export default function SingleBlogPage({ b }) {
                 <small className={styles.photoAttribution}>
                   Photo by:{' '}
                   <Link href={b.imgAuthorLink}>
-                    <a target='_blank'>{b.imgAuthor}</a>
+                    <a target='_blank' rel='noreferrer'>
+                      {b.imgAuthor}
+                    </a>
                   </Link>{' '}
                   on{' '}
                   <Link href={b.imgSourceLink}>
-                    <a target='_blank'>{b.imgSource}</a>
+                    <a target='_blank' rel='noreferrer'>
+                      {b.imgSource}
+                    </a>
                   </Link>
                 </small>
                 <div className='article-content'>
