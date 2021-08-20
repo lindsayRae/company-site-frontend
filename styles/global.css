@@ -89,7 +89,7 @@ body {
   --gray: #f8f9fe;
   --black: #121619;
   --paragraph-color: #121619;
-  --pink: #06aed5;
+  --light-blue: #06aed5;
   --gold: #eac785;
   --mud-blue: #6084a4;
   --font-size: 15px;
@@ -221,7 +221,7 @@ h6 {
   color: var(--mud-blue);
 }
 .text-blue {
-  color: var(--pink);
+  color: var(--light-blue);
 }
 textarea.form-control {
   height: auto !important;
@@ -241,7 +241,7 @@ textarea.form-control {
 
 .btn-primary {
   color: var(--black);
-  background: var(--pink);
+  background: var(--light-blue);
   position: relative;
   z-index: 1;
 }
@@ -283,7 +283,7 @@ textarea.form-control {
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background: var(--pink);
+  background: var(--light-blue);
   color: var(--white);
   -webkit-box-shadow: 0 13px 27px 0 rgba(245, 78, 162, 0.25);
   box-shadow: 0 13px 27px 0 rgba(245, 78, 162, 0.25);
@@ -297,14 +297,14 @@ textarea.form-control {
 
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active {
-  background: var(--pink);
+  background: var(--light-blue);
   color: var(--white);
 }
 
 .btn-primary.disabled,
 .btn-primary:disabled {
   opacity: 1;
-  background: var(--pink);
+  background: var(--light-blue);
 }
 
 /*section title*/
@@ -441,7 +441,7 @@ Main Banner CSS
 
 #scroll-down #scroll-title {
   display: block;
-  color: var(--pink);
+  color: var(--light-blue);
   font-weight: 500;
   text-transform: capitalize;
 }
@@ -578,7 +578,7 @@ Services CSS
   font-size: 50px;
   -webkit-transition: var(--transition);
   transition: var(--transition);
-  color: var(--pink);
+  color: var(--light-blue);
   line-height: 1;
 }
 
@@ -614,7 +614,7 @@ Services CSS
 
 .more-services-btn .btn-primary {
   color: var(--black);
-  background: var(--pink);
+  background: var(--light-blue);
 }
 
 .more-services-btn .btn-primary::before,
@@ -876,7 +876,7 @@ How We Works CSS ** Our Process
 }
 
 .single-work-box:hover .number {
-  background: var(--pink);
+  background: var(--light-blue);
 }
 
 /*================================================
@@ -938,7 +938,7 @@ Blog CSS
 }
 
 .single-blog-post .blog-post-content .date {
-  color: var(--pink);
+  color: var(--light-blue);
   display: block;
   text-transform: uppercase;
   font-size: 14px;
@@ -958,7 +958,7 @@ Blog CSS
 }
 
 .single-blog-post .read-more-btn:hover {
-  color: var(--pink);
+  color: var(--light-blue);
   letter-spacing: 1px;
 }
 
@@ -972,7 +972,7 @@ Blog CSS
 }
 
 .single-blog-post:hover .blog-image .post-tag a {
-  background: var(--pink);
+  background: var(--light-blue);
   color: var(--white);
 }
 
@@ -1312,7 +1312,7 @@ Go Top CSS
 
 .go-top:hover {
   color: var(--white);
-  background: var(--pink);
+  background: var(--light-blue);
 }
 
 .modal {

@@ -1,0 +1,8 @@
+.photoAttribution {
+  padding-left: 30px;
+  margin-top: 15px;
+}
+
+.photoAttribution a {
+  color: var(--light-blue);
+}
