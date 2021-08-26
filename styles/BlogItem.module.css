@@ -1,0 +1,87 @@
+.portfolioTag {
+  background: #38d16a;
+  color: #ffffff;
+  padding: 5px 15px 3px;
+  display: inline-block;
+  border-radius: 3px;
+}
+/*================================================
+Blog CSS
+=================================================*/
+
+.singleBlogPost {
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.06);
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.06);
+}
+
+.singleBlogPost .blogImage {
+  position: relative;
+  overflow: hidden;
+}
+
+.singleBlogPost .blogImage a {
+  display: block;
+}
+
+.singleBlogPost .blogImage a img {
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+}
+
+.singleBlogPost .blogImage .postTag {
+  position: absolute;
+  right: 0;
+  top: 60px;
+  -webkit-transition: var(--transition);
+  transition: var(--transition);
+}
+
+.singleBlogPost .blogImage .postTag p {
+  background: var(--green);
+  color: var(--white);
+  padding: 9px 28px;
+}
+
+.singleBlogPost .blogPostContent {
+  padding: 25px;
+}
+
+.singleBlogPost .blogPostContent .date {
+  color: var(--light-blue);
+  display: block;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.singleBlogPost .blogPostContent h3 {
+  margin-top: 13px;
+  margin-bottom: 18px;
+  line-height: 30px;
+  font-size: 22px;
+}
+
+.singleBlogPost .readMoreBtn {
+  position: relative;
+  font-weight: 500;
+  color: var(--green);
+}
+
+.singleBlogPost .readMoreBtn:hover {
+  color: var(--light-blue);
+  letter-spacing: 1px;
+}
+
+.singleBlogPost:hover .blogImage a img {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.singleBlogPost:hover .blogImage .postTag {
+  top: 70px;
+}
+
+.singleBlogPost:hover .blogImage .postTag a {
+  background: var(--light-blue);
+  color: var(--white);
+}

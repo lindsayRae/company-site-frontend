@@ -16,30 +16,30 @@ export default function BlogItem({ b }) {
   return (
     <>
       <Col lg='4' md='6'>
-        <div className='single-blog-post'>
-          <div className='blog-image'>
+        <div className={styles.singleBlogPost}>
+          <div className={styles.blogImage}>
             <Link href={`/blog/${b.slug}`}>
               <a>
                 <Image
                   src={
                     b.image ? b.image.formats.small.url : '/images/blank.jpg'
                   }
-                  width={350}
+                  width={384}
                   height={233}
                   alt='image of blog'
                 />
               </a>
             </Link>
-            <div className='post-tag'>
+            <div className={styles.postTag}>
               <p>{b.tag}</p>
             </div>
           </div>
-          <div className='blog-post-content'>
-            <span className='date text-blue'>{formateDate(b.date)}</span>
+          <div className={styles.blogPostContent}>
+            <span className={styles.date}>{formateDate(b.date)}</span>
             <h3>{b.title}</h3>
             <p>{b.summary}</p>
             <Link href={`/blog/${b.slug}`}>
-              <a className='read-more-btn'>
+              <a className={styles.readMoreBtn}>
                 Read Full Article <FaAngleDoubleRight />
               </a>
             </Link>

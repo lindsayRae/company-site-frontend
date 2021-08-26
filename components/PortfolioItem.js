@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import styles from '@/styles/Portfolio.module.css';
+import styles from '@/styles/BlogItem.module.css';
 
 import { Col } from 'react-bootstrap';
 import { FaAngleDoubleRight } from 'react-icons/fa';
@@ -10,15 +10,15 @@ export default function PortfolioItem({ p }) {
   return (
     <>
       <Col lg='4' md='6'>
-        <div className='single-blog-post'>
-          <div className='blog-image'>
+        <div className={styles.singleBlogPost}>
+          <div className={styles.blogImage}>
             <Link href={`/portfolio/${p.slug}`}>
               <a>
                 <Image
                   src={
                     p.image ? p.image.formats.small.url : '/images/blank.jpg'
                   }
-                  width={350}
+                  width={384}
                   height={233}
                   alt='image of portfolio item'
                 />
@@ -26,7 +26,7 @@ export default function PortfolioItem({ p }) {
             </Link>
           </div>
 
-          <div className='blog-post-content'>
+          <div className={styles.blogPostContent}>
             <div className={styles.portfolioTag}>
               <span>{p.tag}</span>
             </div>

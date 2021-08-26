@@ -6,3 +6,122 @@
 .photoAttribution a {
   color: var(--light-blue);
 }
+
+/*================================================
+Blog Details CSS
+=================================================*/
+
+.blogDetailsArea {
+  position: relative;
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+.blogDetailsArea .blogDetails {
+  -webkit-box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
+  box-shadow: 0px 0px 29px 0px rgba(102, 102, 102, 0.1);
+  background: var(--white);
+}
+
+.blogDetailsArea .blogDetails .articleImg {
+  position: relative;
+}
+
+.blogDetailsArea .blogDetails .articleImg img {
+  width: 100%;
+}
+
+.blogDetailsArea .blogDetails .articleImg .date {
+  bottom: 10px;
+  width: 120px;
+  left: 2px;
+  /* height: 40px; */
+  font-size: 15px;
+  padding-top: 8px;
+  line-height: 15px;
+  position: absolute;
+  text-align: center;
+  font-style: italic;
+  background: var(--green);
+  color: var(--white);
+  border-radius: 5px;
+  padding: 15px;
+}
+
+.blogDetailsArea .blogDetails .articleContent {
+  padding: 30px;
+}
+
+.blogDetailsArea .blogDetails .articleContent ul li {
+  display: inline-block;
+}
+
+.blogDetailsArea .blogDetails .articleContent ul.category {
+  margin-bottom: 30px;
+}
+
+.blogDetailsArea .blogDetails .articleContent ul.category li {
+  margin-right: 4px;
+}
+
+.blogDetailsArea .blogDetails .articleContent ul.category li a {
+  background: var(--green);
+  color: var(--white);
+  padding: 5px 15px 3px;
+  display: inline-block;
+  border-radius: 3px;
+}
+
+.blogDetailsArea .blogDetails .articleContent h2 {
+  margin-top: 26px;
+}
+
+.blogDetailsArea .blogDetails .articleContent h3 {
+  font-size: 22px;
+  margin-bottom: -2px;
+  line-height: 30px;
+}
+
+.blogDetailsArea .blogDetails .articleContent p {
+  margin-bottom: 0;
+  margin-top: 20px;
+}
+
+.blogDetailsArea .blogDetails .articleContent .blockquote {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: #f9f9f9;
+  padding: 30px;
+  border-left: 4px solid var(--green);
+}
+
+.blogDetailsArea .blogDetails .articleContent .blockquote p {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.blogDetailsArea .blogDetails .articleContent ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+@media (min-width: 600px) {
+  .blogDetailsArea .blogDetails .articleImg .date {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+    text-align: center;
+    font-size: 22px;
+    font-style: italic;
+    background: var(--green);
+    color: var(--white);
+    border-radius: 5px;
+    padding: 15px;
+    line-height: 30px;
+  }
+
+  .blogDetailsArea {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}

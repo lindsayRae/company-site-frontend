@@ -5,6 +5,7 @@ import SearchBlog from '@/components/SearchBlog';
 import Pagination from '@/components/Pagination';
 import { Container, Row } from 'react-bootstrap';
 
+import styles from '@/styles/BlogSlug.module.css';
 import Link from 'next/link';
 
 export default function BlogPage({ blogs, page, total }) {
@@ -24,7 +25,7 @@ export default function BlogPage({ blogs, page, total }) {
           </ul>
         </Container>
       </div>
-      <section className='blog-area ptb-120'>
+      <section className={styles.blogDetailsArea}>
         <Container>
           <Row className='justify-content-md-center pb-5'>
             <SearchBlog />

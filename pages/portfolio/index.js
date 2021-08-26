@@ -3,6 +3,7 @@ import { API_URL, PER_PAGE } from '@/config/index';
 import PortfolioItem from '@/components/PortfolioItem';
 import { Container, Row } from 'react-bootstrap';
 
+import styles from '@/styles/BlogSlug.module.css';
 import Link from 'next/link';
 
 export default function PortfolioPage({ portfolios }) {
@@ -22,7 +23,7 @@ export default function PortfolioPage({ portfolios }) {
           </ul>
         </Container>
       </div>
-      <section className='blog-area ptb-120'>
+      <section className={styles.blogDetailsArea}>
         <Container>
           <Row className='justify-content-md-center pb-5'></Row>
           <Row>

@@ -34,12 +34,13 @@ export default function SingleBlogPage({ b }) {
           </ul>
         </Container>
       </div>
-      <section className='blog-details-area ptb-120'>
+      {/* ptb-120 */}
+      <section className={styles.blogDetailsArea}>
         <Container>
           <Row>
             <Col>
-              <div className='blog-details'>
-                <div className='article-img'>
+              <div className={styles.blogDetails}>
+                <div className={styles.articleImg}>
                   <Image
                     src={
                       b.image ? b.image.formats.large.url : '/images/blank.jpg'
@@ -48,7 +49,7 @@ export default function SingleBlogPage({ b }) {
                     height={700}
                     alt='image of blog'
                   />
-                  <div className='date'>{formateDate(b.date)}</div>
+                  <div className={styles.date}>{formateDate(b.date)}</div>
                 </div>
                 <small className={styles.photoAttribution}>
                   Photo by:{' '}
@@ -64,8 +65,8 @@ export default function SingleBlogPage({ b }) {
                     </a>
                   </Link>
                 </small>
-                <div className='article-content'>
-                  <ul className='category'>
+                <div className={styles.articleContent}>
+                  <ul className={styles.category}>
                     <li>
                       <a>{b.tag}</a>
                     </li>
