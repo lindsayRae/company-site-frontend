@@ -28,6 +28,11 @@ export default function BlogPage({ blogs, page, total }) {
       <section className={styles.blogDetailsArea}>
         <Container>
           <Row className='justify-content-md-center pb-5'>
+            <div className='section-title'>
+              <h2>Blog Articles</h2>
+            </div>
+          </Row>
+          <Row className='justify-content-md-center pb-5'>
             <SearchBlog />
           </Row>
           <Row>

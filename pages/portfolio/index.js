@@ -25,7 +25,11 @@ export default function PortfolioPage({ portfolios }) {
       </div>
       <section className={styles.blogDetailsArea}>
         <Container>
-          <Row className='justify-content-md-center pb-5'></Row>
+          <Row className='justify-content-md-center pb-5'>
+            <div className='section-title'>
+              <h2>Check out our Projects</h2>
+            </div>
+          </Row>
           <Row>
             {portfolios.length === 0 && <h3>No portfolio items to show</h3>}
             {portfolios.map((p) => (
