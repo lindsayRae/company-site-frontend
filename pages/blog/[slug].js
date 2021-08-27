@@ -67,9 +67,7 @@ export default function SingleBlogPage({ b }) {
                 </small>
                 <div className={styles.articleContent}>
                   <ul className={styles.category}>
-                    <li>
-                      <a>{b.tag}</a>
-                    </li>
+                    <li>{b.tag}</li>
                   </ul>
                   <h1>{b.title}</h1>
                   <ReactMarkdown>{b.description}</ReactMarkdown>

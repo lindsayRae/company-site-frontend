@@ -64,7 +64,7 @@ Blog Details CSS
   margin-right: 4px;
 }
 
-.blogDetailsArea .blogDetails .articleContent ul.category li a {
+.blogDetailsArea .blogDetails .articleContent ul.category li {
   background: var(--green);
   color: var(--white);
   padding: 5px 15px 3px;
